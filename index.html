@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <!-- Compiled and minified CSS -->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">News App</a>
+            </div>
+        </nav>
+        <div class="search-controls">
+            <form name="newsControls" >
+                <div class="search-content">
+                    <span class="search-title">Search news</span>
+                    <label>Choose your country</label>
+
+                    <input class="input" list="countries" id="country"/>
+                    <datalist class="input" name="countries" id="countries">
+                        <option value="ua">Ukraine</option>
+                        <option value="us">United States</option>
+                    </datalist>
+
+                    <input 
+                        type="text"
+                        id="autocomplete-input"
+                        class="autocomplete input"
+                        name="search"
+                        placeholder="Search"
+                    />
+                </div>
+                <div class="search-action">
+                    <button
+                        class="btn btn-search"
+                        type="submit"
+                        name="action"
+                    >
+                        Search
+                        <i class="material-icons right">search</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="news-container">
+
+            <div class="container grid-container" id="news-container">
+                <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+            </div>
+        </div>
+        <!-- Compiled and minified JavaScript -->
+        <script src="app.js" type="module"></script>
+    </body>
+</html>
